@@ -57,6 +57,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Header starts */
 .header {
   padding-bottom: 20px;
 }
@@ -81,13 +82,16 @@ img {
   text-decoration: none;
   color: #000;
 }
-.section-about{
+/* Header ends */
+/* About styles start */
+.about{
   height: 640px;
   position: relative;
   background: url(../img/background.jpg) no-repeat center;
   background-size: cover;
+  margin-bottom: 20px;
 }
-.section-about__block{
+.about__block{
   height: 190px;
   width: 420px;
   position: absolute;
@@ -96,17 +100,48 @@ img {
   background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
   padding: 15px;
 }
-.section-about__border{
+.about__border{
   height: 160px;
   width: 390px;
   border: #000 1px solid;
   padding: 17px 28px 0 28px;
 }
-.section-about__title{
+.about__title{
   font-family: "Philosopher";
   font-size: 30px;
   margin-bottom: 9px;
 }
-.section_about__text{
+.about__desc{
   font-size: 12px;
 }
+/* About styles end */
+/* Description styles start */
+.descripton{
+  margin-bottom: 20px;
+}
+.description__icon-box{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.description__icon-box_pic{
+  margin-right: 76px;
+}
+.description__icon-box_pic:last-child{
+  margin-right: 0;
+}
+.description__text-box{
+  width: 1000px;
+  margin: 0 auto;
+}
+.descripton__title{
+  font-family: "Philosopher";
+  font-size: 96px;
+  text-align: center;
+}
+.descripton__span{
+  color: #f15b40;
+}
+.descripton__desc{
+  text-align: center;
+}
+/* Description styles end */
