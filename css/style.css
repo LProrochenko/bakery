@@ -39,6 +39,7 @@
 
 html {
   box-sizing: border-box;
+  background-color: #ffe2b0;
 }
 *,
 *::after,
@@ -51,14 +52,13 @@ body {
   font-weight: 400;
   font-size: 18px;
   color: #000;
-  line-height: 24px;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 .header {
-  background-color: #ffe2b0;
+  padding-bottom: 20px;
 }
 .header__logo {
   display: flex;
@@ -69,11 +69,9 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
 }
 .header__item {
   margin-right: 100px;
-
   font-weight: bold;
 }
 .header__item:last-child {
@@ -82,4 +80,33 @@ img {
 .header__item-link {
   text-decoration: none;
   color: #000;
+}
+.section-about{
+  height: 640px;
+  position: relative;
+  background: url(../img/background.jpg) no-repeat center;
+  background-size: cover;
+}
+.section-about__block{
+  height: 190px;
+  width: 420px;
+  position: absolute;
+  top: 54%;
+  left: 51%;
+  background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
+  padding: 15px;
+}
+.section-about__border{
+  height: 160px;
+  width: 390px;
+  border: #000 1px solid;
+  padding: 17px 28px 0 28px;
+}
+.section-about__title{
+  font-family: "Philosopher";
+  font-size: 30px;
+  margin-bottom: 9px;
+}
+.section_about__text{
+  font-size: 12px;
 }
