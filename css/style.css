@@ -116,7 +116,7 @@ img {
 }
 /* About styles end */
 /* Description styles start */
-.descripton{
+.description{
   margin-bottom: 20px;
 }
 .description__icon-box{
@@ -145,3 +145,18 @@ img {
   text-align: center;
 }
 /* Description styles end */
+/* Maps styles start */
+.maps{
+  margin-bottom: 20px;
+}
+.maps__title{
+  font-family: "Philosopher";
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.maps__map{
+  display: block;
+  margin: 0 auto;
+}
+/* Maps styles end */
