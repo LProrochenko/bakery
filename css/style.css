@@ -160,3 +160,30 @@ img {
   margin: 0 auto;
 }
 /* Maps styles end */
+/* Footer styles start */
+.footer{
+  height: 70px;
+}
+.line{
+  width: 1024px;
+  border:0;
+  border-top: 1px solid #999999;
+  margin: 0 auto 20px auto;  
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__item {
+  margin-right: 100px;
+  font-weight: bold;
+}
+.footer__item:last-child {
+  margin-right: 0;
+}
+.footer__item-link {
+  text-decoration: none;
+  color: #000;
+}
+/* Footer styles end */
