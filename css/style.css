@@ -60,6 +60,7 @@ img {
 /* Header starts */
 .header {
   padding-bottom: 20px;
+  position: relative;
 }
 .header__logo {
   display: flex;
@@ -81,6 +82,36 @@ img {
 .header__item-link {
   text-decoration: none;
   color: #000;
+  transition: all .2s;
+}
+.header__item-link:hover,
+.header__item-link:focus,
+.header__item-link:active{
+  opacity: .75;
+  font-size: 20px;
+}
+.header__burger{
+  display: none;
+  width: 40px;
+  height: 28px;
+  position: relative;
+}
+.burger__line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+.burger__line-first{
+  top: 0;
+}
+.burger__line-second{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.burger__line-third{
+  bottom: 0;
 }
 /* Header ends */
 /* About styles start */
@@ -185,5 +216,67 @@ img {
 .footer__item-link {
   text-decoration: none;
   color: #000;
+  transition: all .2s;
+}
+.footer__item-link:hover,
+.footer__item-link:focus,
+.footer__item-link:active{
+  opacity: .75;
+  font-size: 20px;
 }
 /* Footer styles end */
+@media screen and (max-width: 767px){
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .header__logo{
+    margin: 0;
+  }
+  .header__nav{
+    position: fixed;
+    top: 0;
+    right:-100%;
+    height: 100vh;
+    width: 50%;
+    background-color: #ffe2b0;
+    padding: 75px;
+    z-index: 10;
+    transition: 1s all linear;
+  }
+  .header__item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  .header__item:last-child{
+    margin-bottom: 0;
+  }
+  .header__item-link{
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .header__burger{
+    display: block;
+  }
+  .burger__line{
+    transition: 1s all;
+  }
+  .burger_active{
+    z-index: 11;
+  }
+  .burger_active .burger__line-first{
+    transform: translateY(13px) rotate(-45deg);
+  }
+  .burger_active .burger__line-second{
+    display: none;
+  }
+  .burger_active .burger__line-third{
+    transform: translateY(-13px) rotate(45deg);
+  }
+  .header__nav_active{
+    right: 0;
+  }
+}

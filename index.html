@@ -18,26 +18,29 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <a href="#!" class="header__item-link">Про нас</a>
+                        <a href="#about" class="header__item-link">Про нас</a>
                     </li>
                     <li class="header__item">
-                        <a href="#!" class="header__item-link">Новини</a>
+                        <a href="#news" class="header__item-link">Новини</a>
                     </li>
                     <li class="header__item">
                         <a href="#!" class="header__item-link">Меню</a>
                     </li>
                     <li class="header__item">
-                        <a href="#!" class="header__item-link">Контакти</a>
+                        <a href="#contacts" class="header__item-link">Контакти</a>
                     </li>
                 </ul>
             </nav>
+            <div class="header__burger burger">
+                <span class="burger__line burger__line-first"></span>
+                <span class="burger__line burger__line-second"></span>
+                <span class="burger__line burger__line-third"></span>
+            </div>
      </header>
-
-
     <!-- Header ends -->
      <main class="main">
         <!-- Section about starts -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about__block">
                 <div class="about__border">
                     <h2 class="about__title">Спеціальне замовлення</h2>
@@ -46,8 +49,8 @@
             </div>
         </section>
         <!-- Section-about ends -->
-        <!-- Section  description starts -->
-        <div class="description">
+        <!-- Section description starts -->
+        <div class="description" id="news">
             <div class="description__icon-box">
                 <img src="./img/svg/01-ico.svg" alt="Bakery" class="description__icon-box_pic">
                 <img src="./img/svg/02-ico.svg" alt="Cakes" class="description__icon-box_pic">
@@ -61,7 +64,7 @@
         </div>
         <!-- Section description ends -->
         <!-- Section maps starts -->
-         <section class="maps">
+         <section class="maps" id="contacts">
             <h2 class="maps__title">Замовити</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20316.125946653083!2d30.476724810839833!3d50.46874169999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4c0cc2b39d%3A0xdc07b7b86a5c9d41!2z0KXQu9GW0LHQsNGA!5e0!3m2!1sru!2sua!4v1721661475215!5m2!1sru!2sua" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="maps__map"></iframe>
          </section>
@@ -88,5 +91,6 @@
         </nav>
       </footer>
      <!-- Footer ends -->
+      <script src="./js/main.js"></script>
   </body>
 </html>
