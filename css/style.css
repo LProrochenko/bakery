@@ -127,7 +127,7 @@ img {
   width: 420px;
   position: absolute;
   top: 54%;
-  left: 51%;
+  right: 20%;
   background: linear-gradient(180deg, rgba(244, 213, 178, 0.8) 0%, rgba(234, 156, 65, 0.8) 100%);
   padding: 15px;
 }
@@ -177,18 +177,25 @@ img {
 }
 /* Description styles end */
 /* Maps styles start */
-.maps{
+.map{
   margin-bottom: 20px;
 }
-.maps__title{
+.map__title{
   font-family: "Philosopher";
   font-size: 36px;
   text-align: center;
   margin-bottom: 20px;
 }
-.maps__map{
-  display: block;
-  margin: 0 auto;
+.map__wrapper{
+  position: relative;
+  padding-top: 56.25%;
+}
+.map__item{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* Maps styles end */
 /* Footer styles start */
@@ -225,6 +232,35 @@ img {
   font-size: 20px;
 }
 /* Footer styles end */
+@media screen and (max-width: 1060px){
+  .description__icon-box_pic {
+    margin-right: 30px;
+  }
+.description__text-box {
+  width: 900px;
+  }
+.line {
+  width: 924px;
+  }
+}
+@media screen and (max-width: 960px){
+  .about__block{
+    right: 10%;
+  }
+.description__text-box {
+  width: 744px;
+  }
+.description__icon-box_pic {
+  height: 200px;
+  width: 200px;
+  }
+.descripton__title {
+  font-size: 76px;
+  }
+.line {
+  width: 766px;
+  }
+}
 @media screen and (max-width: 767px){
   .header{
     display: flex;
@@ -278,5 +314,85 @@ img {
   }
   .header__nav_active{
     right: 0;
+  }
+  .about {
+    height: 440px;
+  }
+  .about__block{
+    top: 45%;
+  }
+  .description__text-box {
+    width: 544px;
+  }
+  .description__icon-box_pic {
+    height:160px;
+    width: 160px;
+    margin-right: 20px;
+  }
+  .descripton__title {
+    font-size: 56px;
+  }
+  .line {
+    width: 549px;
+  }
+  .footer__item {
+    margin-right: 70px;}
+  .footer__item:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 550px){
+  .about {
+    height: 390px;
+  }
+  .about__block {
+    height: 200px;
+    width: 320px;
+    right: 0;
+    padding: 10px;
+  }
+  .about__border {
+    height: 180px;
+    width: 300px;
+    padding: 17px 14px 0 14px;
+  }
+  .about__title {
+    font-size: 22px;
+  }
+  .description__icon-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .description__icon-box_pic{
+    height:200px;
+    width: 200px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .description__icon-box_pic:last-child{
+    margin-bottom: 0;
+  }
+  .description__text-box {
+    width: 320px;
+    padding: 10px;
+  }
+  .descripton__title {
+    font-size: 36px;
+  }
+  .descripton__desc {
+    font-size: 14px;
+  }
+  .line {
+    width: 320px;
+  }
+  .footer__list {
+    flex-direction: column;
+    padding-left: 105px;
+  }
+  .footer__item {
+    margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
