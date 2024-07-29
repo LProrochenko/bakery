@@ -463,6 +463,7 @@ img {
   width: 40px;
   height: 28px;
   position: relative;
+  cursor: pointer;
 }
 .burger__line{
   display: block;
@@ -491,8 +492,6 @@ img {
   margin-bottom: 20px;
 }
 .about__block{
-  height: 190px;
-  width: 420px;
   position: absolute;
   top: 54%;
   right: 20%;
@@ -500,10 +499,10 @@ img {
   padding: 15px;
 }
 .about__border{
-  height: 160px;
+  min-height: 160px;
   width: 390px;
   border: #000 1px solid;
-  padding: 17px 28px 0 28px;
+  padding: 17px 28px;
 }
 .about__title{
   font-family: "Philosopher";
